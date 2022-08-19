@@ -1,0 +1,613 @@
+body{
+    width:100%;
+    height:auto;
+    background:linear-gradient(120deg,purple 100px,rgb(3, 95, 243));
+    background-image: linear-gradient(to right , rgb(128, 3, 128)  , rgba(255, 0, 0, 0.603));
+
+}
+
+/* nav */
+nav{
+    display:flex;
+    width:100%;
+    height:80px;
+    background-image: linear-gradient(to right , rgb(128, 3, 128)  , rgba(255, 0, 0, 0.603));
+
+    /* border:2px solid black; */
+    position:fixed;
+    top:0px;
+    z-index: 10;
+}
+#nav #logo{
+    display: inline-block;
+    width:200px;
+    height:80px;
+    /* border:2px solid black; */
+}
+#nav #logo p{
+    position: relative;
+    left:85px;
+    top:-80px;
+    color:white;
+    
+}
+#nav #logo #owner_name{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#nav #logo #company{
+   top:-138px;
+   font-size: .9rem;
+
+}
+#nav #content{
+    width:100%;
+    height: 80px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+#section1{
+    margin-left:10px;
+    margin-top:10px;
+}
+#section2 {
+    margin-top:-40px;
+    margin-left:-50px;
+    color:white;
+}
+#bell{
+    margin:20px;
+}
+#microphone{
+    position: relative;
+    left:-23px;
+    top:4px;
+    color:white;
+    opacity: .3;
+}
+#search_icon{
+    position: relative;
+    left:27px;
+    top:4px;
+}
+
+input{
+    position: relative;
+    width:250px;
+    height:30px;
+    outline-style: none;
+    font-size: 20px;
+    color:white;
+    top:5px;
+    background-color: transparent;
+    background-color: rgba(0,0,0,.6);
+    padding-left:30px;
+    padding-right:30px;
+    border:none;
+    border-radius: 20px 20px;
+}
+#section2 img{
+    position: relative;
+    top:40px;
+}
+
+nav img{
+    width:80px;
+    height:80px;
+    border-radius: 50%; 
+} 
+
+
+
+#hidden{
+    width:100%;
+    margin-left:90%;
+    margin-top:2%;
+    text-align: left;
+     left:75vw;
+     top:20px; 
+     font-size: 40px; 
+    display: none; 
+}
+#hidden a{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #section1,#section2{
+        display:none;
+    }
+    #hidden{
+        display: block;
+        cursor: pointer;
+    }
+  
+}
+#home{
+    margin-top:0px;
+}
+
+/* nav hidden */
+#nav_hidden{
+    width:200px;
+    height:500px;
+    display:none;
+    margin-left:-360px;
+    margin-top:80px;
+    z-index: 50;
+    }
+    #nav_hidden div{
+        width:200px;
+        height:50px;
+        border:1px solid white;
+        background-color:rgb(179, 174, 174);
+    }
+    
+    #nav #hidden{
+        width:100%;
+        margin-left:90%;
+        margin-top:2%;
+        text-align: left;
+         left:75vw;
+         top:20px; 
+         font-size: 40px; 
+        /* display: none;  */
+    }
+    #nav #hidden a{
+        text-decoration: none;
+        color:white;
+    }
+    #nav_hidden a{
+        text-decoration: none;
+    }
+   #nav_hidden:target{
+       display: block;
+   }
+
+/* content */
+#content{
+  width:90%;
+  height:auto;
+  /* border:2px solid black; */
+  margin:auto;
+  
+  display:flex;
+  /* margin-top:20px; */
+}
+
+#left{
+    width:70%;
+    height:auto;
+    /* border:2px solid red; */
+    display: block;
+    justify-content:space-between;
+    margin-top: 80px;
+    
+}
+#left1{
+    width:100%;
+    height: 350px;
+    display:flex;
+    /* border:2px solid black; */
+}
+
+/* inner left */
+#inner_left{
+    width:40%;
+    height:350px;
+    /* border:2px solid black; */
+    /* border-radius: 0px 0px 1 00px 100px; */
+    background-image: url("atif.png");
+    background-color: rgba(0,0,0,6);
+    background-size: cover;
+    /* box-shadow: 10px 10px 10px 10px black; */
+    backdrop-filter: blur(50px);
+    background-color: rgba(62, 64, 184, 0.596);
+    transition:all 2s ease-in-out;
+
+}
+
+
+#inner_left img{
+    width:100%;
+    height: 350px;
+    
+}
+
+#inner_right{
+    width:60%;
+    height: 350px;
+    color:white;
+    /* border: 2px solid black;; */
+    background-color: rgba(62, 64, 184, 0.596);
+    padding-left:25px;
+
+}
+#inner_right p{
+    text-align: justify;
+    padding-right: 20px;
+    letter-spacing: .5px
+}
+button{
+    width:100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;  
+    color:white; 
+    background:linear-gradient(rgba(0, 0, 255, 0.692),rgba(128, 0, 128, 0.623));
+}
+#inner_right #up1{
+    margin-top:-20px;
+}
+
+#inner_right #up2{
+    margin-top:5px;
+}
+/* box container */
+#box_container{
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+/* box */
+#box{
+    width: 100%;
+    height:70px;
+    /* border:2px solid black; */
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color: rgba(0,0,0,.4);
+}
+#box_left{
+    width:250px;
+    height: 70px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#box_left img{
+    padding:5px;
+   width:100px;
+}
+#box_right{
+    width: 80px;
+    height: 70px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#box_right i{
+    padding-top:20px;
+}
+#box #number{
+    font-weight: 700;
+}
+
+#box #song_name{
+    font-size: large;
+    font-weight: 900;
+}
+#box #singer_name{
+   margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aside */
+#aside{
+    width:30%;
+    height:auto;
+    /* border:2px solid green; */
+    margin-top: 70px;
+
+}
+#queue{
+    margin-left:20px;
+}
+#top{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    /* border:2px solid black; */
+}
+#top div{
+    display: flex;
+}
+#top i{
+    position: relative;
+    top:17px;
+    margin-left:9px;
+    color:white;
+}
+#queue{
+    font-size: 25px;
+    font-weight: 700;
+    color:white;
+    margin-top:9px;
+}
+
+li div{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+li img{
+    width:50px;
+    height:50px;
+}
+li span{
+    display:flex;
+}
+li{
+    color:white;
+    margin-top:10px;
+}
+section #song_name{
+ font-weight: 700;
+ margin-top: 5px;
+ margin-left: 8px;
+ font-size: 1.1rem;
+
+}
+section #singer_name{
+   margin-top: -19px;
+   margin-left: 8px;
+   font-size: .9rem;
+
+}
+li i{
+    margin-top: 15px;
+}
+#large{
+    width:100px;
+    height:100px;
+}
+#nomargin li{
+    list-style: none;
+}
+/* Music box */
+#music_box{
+    width:100%;
+    height:80px;
+    margin-left:-5px;
+    padding:0px;
+    background-color:rgb(73, 73, 73);
+   
+    position: fixed;
+    top:90vh; 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:white;
+    display: none;
+}
+#music_box:target{
+    display: block;
+    display: flex;
+}
+
+#box1{
+    width:250px;
+    height:80px;
+}
+#box2{
+    width:300px;
+    height: 80px;
+}
+#box3{
+    width:230px;
+    height: 80px;
+    position: relative;
+
+}
+#box4{
+    width: 10px;
+    height: 80px;
+    position: relative;
+    border:2px solid black;
+}
+#music_box #box3{
+    display: felx;
+}
+
+
+
+#box3 #border{
+    width:100px;
+    height:5px;
+    background:linear-gradient(100deg,green 9px,white);
+    margin-left:80px;
+    margin-top:20px;
+    border-radius: 20px;
+}
+#box3 #inner_border{
+    position: relative;
+    width:10px;
+    height: 10px;
+    background-color:white;
+    border-radius: 100%;
+    left:140px;
+    top:-8px;
+}
+#inlarge{
+    position: relative;
+    margin-left:190px;
+    top:-22px;
+}
+#headphone,#setting,#volume{
+  position: relative;
+  margin-right:5px;
+  top:30px;
+}
+#box2 #border1{
+    position: relative;
+    width:220px;
+    height:5px;
+    background:linear-gradient(100deg,green 9px,white);
+    left:40px;
+    top:-25px;
+    border-radius: 20px;
+}
+#box2 #border2{
+    position: relative;
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+    top:33px;
+    left:150px;
+    z-index: 2;
+}
+#time1{
+    position: relative;
+    top:2px;
+}
+#time2{
+    position: relative;
+    top:-35px;
+    left:270px;
+}
+#pause{
+    position: relative;
+    font-size: 2rem;
+    left:105px;
+    top:10px;
+}
+#forward{
+    position: relative;
+    left:120px;
+    top:5px;
+}
+#redo{
+    position: relative;
+    left:120px;
+    top:5px;
+}
+#backward{
+    position: relative;
+    top:5px;
+    left:17px;
+}
+#suffle{
+    position: relative;
+    left:50px;
+    top:5px;
+}
+
+#box1 img{
+    width:60px;
+    height:60px;
+    margin-top:10px;
+}
+#box1 #song_name{
+    margin-left:70px;
+    margin-top: -55px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#box1 #singer_name{
+    margin-left: 70px;
+    margin-top: -15px;
+    font-size: .9rem;
+}
+#box1 #heart{
+    position: relative;
+    left:180px;
+    top:-60px;
+}
+#box1 #ban{
+    position: relative;
+    left:190px;
+    top:-60px;
+}
+
+#close{
+    position: relative;
+    left:170px;
+    top:-85px;
+    color:white;
+}
+
+/* media qwery */
+@media only screen and (min-width: 1500px) {
+    body{
+        width:80%;
+        margin:auto;
+    }
+    #content{
+        width:80%;
+    }
+    nav{
+        width: 80%;
+        margin: auto;
+    }
+    #music_box{
+        width:80%;
+        margin:auto;
+        top:91.5vh;
+    }
+    
+ } 
+
+@media only screen and (max-width:900px){
+    #aside{
+        display: none;
+    }
+    #content{
+        width:100%;
+        
+    }
+    #left{
+        margin:auto;
+        margin-top:80px;
+    }
+    
+  
+
+
+}
+@media only screen and (max-width:800px){
+#music_box #box1{
+    display: none;
+}
+#music_box #box3{
+    display:none;
+}
+#music_box #box2{
+    margin:auto;
+}
+
+}
+@media only screen and (max-width:600px){
+ #inner_right{
+     overflow-y: scroll;
+ }
+}
